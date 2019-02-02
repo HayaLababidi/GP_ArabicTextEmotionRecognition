@@ -2,7 +2,7 @@ import re
 import string
 from nltk.stem.isri import ISRIStemmer
 
-text = input("enter arabic text")
+#text = input("enter arabic text")
 
 #مسح التشكيل و علامات الترقيم و الحروف المتكررة---------
 arabic_punctuations = '''`÷×؛<>_()*&^%][ـ،/:"؟.,'{}~¦+|!”…“–ـ'''
@@ -22,7 +22,10 @@ arabic_diacritics = re.compile("""
 
 
 def normalize_arabic(text):
-    text = re.sub("[إأآا]", "ا", text)
+    text = re.sub("إ", "ا", text)
+    text = re.sub("أ", "ا", text)
+    text = re.sub("آ", "ا", text)
+    text = re.sub("ا", "ا", text)
     text = re.sub("ى", "ي", text)
     text = re.sub("ؤ", "ء", text)
     text = re.sub("ئ", "ء", text)
@@ -79,18 +82,43 @@ def rooting(text):
         result.append(stemmer.stem(word))
     return result
 
-#_______________________________________
+#remove english and empty strings
+def remove_english(tokens):
+    filtered_tokens = list()
+    for word in tokens:
+        if (not re.match(r'[a-zA-Z]+', word, re.I)) and word != '':
+            filtered_tokens.append(word)
+    return filtered_tokens
 
 
-#Synonym replacement
+def preprocess1(text):
+    text = str(text)
+    text = remove_diacritics(text)
+    text = remove_punctuations(text)
+    text = normalize_arabic(text)
+    text = remove_repeating_char(text)
+    tokens = re.split(" ", text)
+    tokens = remove_english(tokens)
+    return tokens
 
+def preprocess2(text):
+    text = str(text)
+    text = remove_diacritics(text)
+    text = remove_punctuations(text)
+    text = normalize_arabic(text)
+    text = remove_repeating_char(text)
+    text = tokens_remove_stopwords(text)
+    text = remove_english(text)
+    text = rooting(text)
+    return text
 
-
+'''
 text = normalize_arabic(text)
 text = remove_diacritics(text)
 text = remove_punctuations(text)
 text = remove_repeating_char(text)
-text = tokens_remove_stopwords(text)
-text = rooting(text)
+
 
 print(text)
+'''
+
