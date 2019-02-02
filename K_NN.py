@@ -1,6 +1,7 @@
 import keras
 import random
 from keras.models import Sequential
+import csv
 import read_data
 _dropout_rate = 0.2
 _dropout_rate_softmax = 0.5
@@ -14,7 +15,21 @@ _epochs = 25
 
 #X list of list of arrays
 X_train, X_test, y_train, y_test = read_data.read_dataset()
-
+try:
+    with open("Embedded_trainX.csv",'w') as f:
+        writer = csv.writer(f,delimiter=',')
+        writer.writerows(X_train)
+    with open("Embedded_testX.csv",'w') as f:
+        writer = csv.writer(f,delimiter=',')
+        writer.writerows(X_test)
+    with open("Embedded_trainY.csv",'w') as f:
+        writer = csv.writer(f,delimiter=',')
+        writer.writerows(y_train)
+    with open("Embedded_testY.csv",'w') as f:
+        writer = csv.writer(f,delimiter=',')
+        writer.writerows(y_test)
+except:
+    print("error saving")
 print("done input embedding")
 model = Sequential()
 

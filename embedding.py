@@ -3,10 +3,10 @@ import re
 import numpy as np
 import normalization
 def embed_doc(text):
-    t_model = gensim.models.Word2Vec.load('../models/full_grams_cbow_100_wiki.mdl')
+
     preprocessed_text = normalization.preprocess1(text)
     #print(preprocessed_text)
-
+    t_model = gensim.models.Word2Vec.load('../models/full_grams_cbow_100_wiki.mdl')
     embedded_vectors = list()#list of arrays (array of 100/300 float number per word)
     for tok in preprocessed_text:
         try:
