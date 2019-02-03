@@ -12,7 +12,8 @@ _kernal_size= 5 #An integer or tuple/list of a single integer
 _pool_size = 3
 _noise_shape = (_batch_size,1,_number_of_inputs)
 _epochs = 25
-
+print("fjrfj")
+'''
 #X list of list of arrays
 X_train, X_test, y_train, y_test = read_data.read_dataset()
 try:
@@ -30,6 +31,12 @@ try:
         writer.writerows(y_test)
 except:
     print("error saving")
+'''
+X_train = list(csv.reader(open("Embedded_trainX.csv")))
+y_train = list(csv.reader(open("Embedded_trainY.csv")))
+X_test = list(csv.reader(open("Embedded_testX.csv")))
+y_test = list(csv.reader(open("Embedded_testY.csv")))
+
 print("done input embedding")
 model = Sequential()
 
@@ -37,7 +44,7 @@ model = Sequential()
 #model.add(keras.layers.Input(shape=(_number_of_inputs,_input_size)))
 
 #Dropout
-model.add(keras.layers.Dropout(rate=_dropout_rate),input_shape=(_number_of_inputs,_input_size))#,noise_shape,random.randint(0,number_of_inputs)))
+model.add(keras.layers.Dropout(rate=_dropout_rate,input_shape=(_number_of_inputs,_input_size)))#,noise_shape,random.randint(0,number_of_inputs)))
 
 #Convolution
 model.add(keras.layers.Conv1D(filters=_number_of_inputs, kernel_size=_kernal_size, strides=1, padding='same', activation="relu"))
