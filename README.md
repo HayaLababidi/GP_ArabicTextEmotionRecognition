@@ -5,8 +5,8 @@ using a CNN and charecter/word embedding
 charecter embedding is a work in progress while word embedding was done uising aravec , a pretrained arabic word embedding model 
 project link : https://github.com/bakrianoo/aravec
 
-[]charecter embedding 
-[x]preproceing (word embedding only)
-[x]using aravec
-[x]CNN 
-[]modify CNN for charecter embedding  
+-[ ]charecter embedding 
+-[x]preproceing (word embedding only)
+-[x]using aravec
+-[x]CNN 
+-[ ]modify CNN for charecter embedding  
