@@ -6,65 +6,31 @@ from keras.models import load_model
 from sklearn.metrics import accuracy_score, classification_report , confusion_matrix
 import csv
 import numpy as np
-import matplotlib as plt
-import itertools
 
 
-def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix', cmap=plt.cm.Blues):
-    """
-    This function prints and plots the confusion matrix.
-    Normalization can be applied by setting `normalize=True`.
-    """
-    if normalize:
-        cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
-        print("Normalized confusion matrix")
-    else:
-        print('Confusion matrix, without normalization')
-
-#     print(cm)
-    plt.figure(figsize=(15,15))
-    plt.imshow(cm, interpolation='nearest', cmap=cmap)
-    plt.title(title)
-    plt.colorbar()
-    tick_marks = np.arange(len(classes))
-    plt.xticks(tick_marks, classes, rotation=45)
-    plt.yticks(tick_marks, classes)
-
-    fmt = '.2f' if normalize else 'd'
-    thresh = cm.max() / 2.
-    for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
-        plt.text(j, i, format(cm[i, j], fmt),
-                 horizontalalignment="center",
-                 color="white" if cm[i, j] > thresh else "black")
-
-    plt.tight_layout()
-    plt.ylabel('True label')
-    plt.xlabel('Predicted label')
-    plt.savefig('cm')
 
 
 class model :
     #import read_data
     def __init__(self):
-        _dropout_rate = 0.2
-        _dropout_rate_softmax = 0.5
-        _number_of_inputs = 140 #max number of words /characters per doc(tweet)
-        _vector_size = 300 #vector for each word
-        _batch_size = 10
-        _kernal_size= 3 #An integer or tuple/list of a single integer
-        _pool_size = 2
-        _noise_shape = (_batch_size,1,_number_of_inputs)
-        _epochs = 100
-        _test_size = 0.1 # percentage of test from the dataset
-        _Learning_rate = 0.0001
+        self._dropout_rate = 0.2
+        self._dropout_rate_softmax = 0.5
+        self._number_of_inputs = 140 #max number of words /characters per doc(tweet)
+        self._vector_size = 300 #vector for each word
+        self._batch_size = 10
+        self._kernal_size= 3 #An integer or tuple/list of a single integer
+        self._pool_size = 2
+        self._epochs = 10
+        self._test_size = 0.1 # percentage of test from the dataset
+        self._Learning_rate = 0.0001
         #_feature_maps = [300,400,500,600,700,800,900,1000,1100,1200]
-        _feature_maps=300
-        _num_conv = 8
-        model= None
+        self._feature_maps=300
+        self._num_conv = 8
+        self.model= None
 
-    def train(self,train_x, train_y,modelname= "trial0"):
+    def train(self,train_x, train_y, modelname= "trial"):
         print("done input embedding")
-        model = Sequential()
+        self.model = Sequential()
 
         # input
         # self.model.add(keras.layers.Input(shape=(_number_of_inputs,_vector_size)))
@@ -123,22 +89,22 @@ class model :
         )
         self.model.save(modelname+".h5")
 
-    def test(self,test_x,test_y,modelname,classes):
+    def test(self,test_x,test_y,modelname):
         if self.model is None:
-            self.model = load_model(modelname)
+            self.model = load_model(modelname+".h5")
         predicted_y = self.model.predict(test_x)
-        acc = accuracy_score(test_y, predicted_y)
-        report = classification_report(test_y, predicted_y)
-        cm = confusion_matrix(test_y, predicted_y)
+        print(np.argmax(predicted_y,axis =1).shape)
+        acc = accuracy_score(np.argmax(test_y,axis =1), np.argmax(predicted_y,axis =1))
+        report = classification_report(np.argmax(test_y,axis =1), np.argmax(predicted_y,axis =1))
+        cm = confusion_matrix(np.argmax(test_y,axis =1), np.argmax(predicted_y,axis =1))
         return cm, acc, report
 
-    def predict(self, sentence, modelname=""):
+    def predict(self, sentence, modelname):
         if self.model is None:
-            try:
-                self.model = load_model(modelname)
-            except:
-                print("model not found")
-                predicted_y = self.model.predict(sentence)
+            self.model = load_model(modelname+".h5")
+            predicted_y = self.model.predict(sentence)
+            #except:
+             #   print(modelname+" model not found")
         else:
             predicted_y = self.model.predict(sentence)
         return predicted_y
