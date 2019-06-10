@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb6f20c7-5b31-4f25-a781-4f66767c349c" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Data_operations.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="233" column="93" lean-forward="true" selection-start-line="233" selection-start-column="93" selection-end-line="233" selection-end-column="93" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#464#1564#0" />
+                <element signature="e#874#1478#0" />
+                <element signature="e#1616#1810#0" />
+                <element signature="e#1852#2213#0" />
+                <element signature="e#2261#2328#0" />
+                <element signature="e#2378#2470#0" />
+                <element signature="e#2522#2559#0" />
+                <element signature="e#2613#3115#0" />
+                <element signature="e#3153#3298#0" />
+                <element signature="e#3345#3545#0" />
+                <element signature="e#3590#3891#0" />
+                <element signature="e#3931#6091#0" />
+                <element signature="e#6151#7157#0" />
+                <element signature="e#7199#7743#0" />
+                <element signature="e#7799#8516#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>y_test</find>
+      <find>model.</find>
+      <find>self.model</find>
+      <find>preprocess2</find>
+      <find>()</find>
+      <find>(</find>
+      <find>t_model</find>
+      <find>out_of_vocab</find>
+      <find>in_vocab</find>
+      <find>read</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>predicted_y</replace>
+      <replace>test_y</replace>
+      <replace>self.model</replace>
+      <replace>self.model.</replace>
+      <replace>(self)</replace>
+      <replace>(self,</replace>
+      <replace>self.t_model</replace>
+      <replace>self.out_of_vocab</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/model" />
+        <option value="$PROJECT_DIR$/Data_operations.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-10" />
+    <option name="width" value="685" />
+    <option name="height" value="730" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="OOP_GP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOP_GP" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb6f20c7-5b31-4f25-a781-4f66767c349c" name="Default Changelist" comment="" />
+      <created>1560080127449</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560080127449</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/model">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_operations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="233" column="93" lean-forward="true" selection-start-line="233" selection-start-column="93" selection-end-line="233" selection-end-column="93" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#464#1564#0" />
+            <element signature="e#874#1478#0" />
+            <element signature="e#1616#1810#0" />
+            <element signature="e#1852#2213#0" />
+            <element signature="e#2261#2328#0" />
+            <element signature="e#2378#2470#0" />
+            <element signature="e#2522#2559#0" />
+            <element signature="e#2613#3115#0" />
+            <element signature="e#3153#3298#0" />
+            <element signature="e#3345#3545#0" />
+            <element signature="e#3590#3891#0" />
+            <element signature="e#3931#6091#0" />
+            <element signature="e#6151#7157#0" />
+            <element signature="e#7199#7743#0" />
+            <element signature="e#7799#8516#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
