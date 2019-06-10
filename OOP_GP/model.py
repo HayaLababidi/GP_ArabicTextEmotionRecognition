@@ -10,10 +10,7 @@ import matplotlib as plt
 import itertools
 
 
-def plot_confusion_matrix(cm, classes,
-                          normalize=False,
-                          title='Confusion matrix',
-                          cmap=plt.cm.Blues):
+def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix', cmap=plt.cm.Blues):
     """
     This function prints and plots the confusion matrix.
     Normalization can be applied by setting `normalize=True`.
@@ -137,6 +134,11 @@ class model :
 
     def predict(self, sentence, modelname=""):
         if self.model is None:
-            self.model = load_model(modelname)
-        predicted_y = self.model.predict(sentence)
+            try:
+                self.model = load_model(modelname)
+            except:
+                print("model not found")
+                predicted_y = self.model.predict(sentence)
+        else:
+            predicted_y = self.model.predict(sentence)
         return predicted_y

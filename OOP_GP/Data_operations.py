@@ -112,7 +112,7 @@ class Data_operations:
         tokens = self.remove_english(tokens)
         return tokens
 
-    def embed_doc(self,text):
+    def embed_doc_word(self,text):
         if self.t_model is None:
             self.t_model = gensim.models.Word2Vec.load(self._aravec_model_name + '.mdl')
         preprocessed_text = self.preprocess_doc(text)
@@ -159,18 +159,18 @@ class Data_operations:
         self.out_of_vocab = 0
         self.out_of_vocab = 0
         for i in range(len(X_train)):
-            eX_train[i], self.out_of_vocab, self.out_of_vocab = self.embed_doc(X_train[i], self.t_model,
+            eX_train[i], self.out_of_vocab, self.out_of_vocab = self.embed_doc_word(X_train[i], self.t_model,
                                                                                self.out_of_vocab, self.out_of_vocab)
 
         for i in range(len(X_test)):
-            eX_test[i], self.out_of_vocab, self.out_of_vocab = self.embed_doc(X_test[i], self.t_model,
+            eX_test[i], self.out_of_vocab, self.out_of_vocab = self.embed_doc_word(X_test[i], self.t_model,
                                                                               self.out_of_vocab, self.out_of_vocab)
         #print("out emo", self.out_of_vocab)
         #print("in emo", self.in_vocab)
         return eX_train, eX_test
 
     # mode 2 functions
-    def get_dictonary(dataset):
+    def get_dictonary(self,dataset):
         uniques = ''
         row = ''
         for text in dataset:
@@ -192,7 +192,25 @@ class Data_operations:
         di = dict(zip(uniques, indexes))
         return di
 
-    def convert_to_int(dataset, dictionary):
+    def convert_to_int_doc(self, text, dictionary):
+
+        row_length = 288
+        padding = len(dictionary)
+        row = []
+        try:
+            for char in text[0]:
+                number = dictionary[char]
+                row.append(number)
+            length = len(row)
+            for i in range(length, row_length):
+                row.append(padding)
+        except:
+            length = len(row)
+            for i in range(length, row_length):
+                row.append(padding)
+        return np.array(row)
+
+    def convert_to_int_dataset(self, dataset, dictionary):
 
         row_length = 288
         data_length = len(dataset)
@@ -201,22 +219,34 @@ class Data_operations:
 
         for index in range(data_length):
             text = dataset[index]
-            row = []
-            try:
-                for char in text[0]:
-                    number = dictionary[char]
-                    row.append(number)
-                length = len(row)
-                for i in range(length, row_length):
-                    row.append(padding)
-
-            except:
-                length = len(row)
-                for i in range(length, row_length):
-                    row.append(padding)
+            row = self.convert_to_int_doc(text,dictionary)
             int_dataset[index] = row
 
         return int_dataset
+
+    def embedd_doc(self,text,mode):
+        # mode 0 word embedding , mode 1 one hot , mode 2 integer embedding,3 keras
+
+        data_df = pd.read_csv("Emotional-Tone-Dataset.csv", encoding="windows-1256")
+        X = data_df[['tweet']].values
+        Y = data_df[['label']].values
+        # use own labels
+        label_binarizer = LabelBinarizer()
+        label_binarizer.fit(Y)  # need to be global or remembered to use it later
+        one_hot_Y = label_binarizer.transform(Y)
+        if mode == 0:
+            embedded_vectors,_,_ = self.embed_doc_word(self, text)
+        elif mode == 1:
+            pass
+        elif mode == 2:
+            _dictionary = self.get_dictonary(X)
+            # convert each character to integer number
+            int_dataset = self.convert_to_int_doc(X, _dictionary)
+            #print("dataset shape:", np.array(int_dataset).shape)
+        elif mode == 3:
+            pass
+        return embedded_vectors, label_binarizer.classes_
+
 
     def read_dataset(self,mode):
         # mode 0 word embedding , mode 1 one hot , mode 2 integer embedding,3 keras
@@ -229,15 +259,12 @@ class Data_operations:
         label_binarizer.fit(Y)  # need to be global or remembered to use it later
         one_hot_Y = label_binarizer.transform(Y)
         if mode == 0:
-            if self.t_model is None:
-               self.t_model = gensim.models.Word2Vec.load(self._aravec_model_name + '.mdl')
             X_train, X_test, y_train, y_test = train_test_split(X, one_hot_Y, test_size=self._test_size, random_state=42)
             eX_train, eX_test = self.embed_dataset_word(self, X_train, X_test)
         elif mode == 1:
             pass
         elif mode == 2:
             _dictionary = self.get_dictonary(X)
-            length = len(_dictionary)
             # convert each character to integer number
             int_dataset = self.convert_to_int(X, _dictionary)
             #print("dataset shape:", np.array(int_dataset).shape)
@@ -246,7 +273,6 @@ class Data_operations:
                                                                         random_state=42)
         elif mode == 3:
             pass
-
         return eX_train, eX_test, y_train, y_test, label_binarizer.classes_
 
     # add char embedding functions  3 of them  keras one hot integer
