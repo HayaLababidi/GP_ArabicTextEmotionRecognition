@@ -1,9 +1,11 @@
-import model
-import Data_operations
+from model import model
+from Data_operations import Data_operations
 import csv
 import numpy as np
 from matplotlib import pyplot as plt
 import itertools
+
+
 
 def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix', cmap=plt.cm.Blues):
     """
@@ -19,26 +21,28 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
     # print(cm)
     plt.figure(figsize=(15, 15))
     plt.imshow(cm, interpolation='nearest', cmap=cmap)
-    plt.title(title)
+    plt.title(title,fontsize=20)
     plt.colorbar()
     tick_marks = np.arange(len(classes))
-    plt.xticks(tick_marks, classes, rotation=45)
-    plt.yticks(tick_marks, classes)
+    plt.xticks(tick_marks, classes, fontsize=20, rotation=45)
+    plt.yticks(tick_marks, classes, fontsize=20)
 
     fmt = '.2f' if normalize else 'd'
     thresh = cm.max() / 2.
     for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
         plt.text(j, i, format(cm[i, j], fmt),
                  horizontalalignment="center",
+                 fontsize=20,
                  color="white" if cm[i, j] > thresh else "black")
 
     plt.tight_layout()
-    plt.ylabel('True label')
-    plt.xlabel('Predicted label')
+    plt.ylabel('True label',fontsize=20)
+    plt.xlabel('Predicted label',fontsize=20)
     plt.savefig('cm')
 
 
 class system:
+    dir_ = "./models/"
     def __init__(self):
         self.m = model()
         self.data = Data_operations()
@@ -59,35 +63,40 @@ class system:
 
     def embedd_dataset(self, modelname='trial', mode=0):
         X_train, X_test, y_train, y_test, classes_ = self.data.read_dataset(mode)
-        np.save('X_train_mode_' + str(mode) + '.npy', X_train)
-        np.save('X_test_mode_' + str(mode) + '.npy', X_test)
-        np.save('y_train_mode_' + str(mode) + '.npy', y_train)
-        np.save('y_test_mode_' + str(mode) + '.npy', y_test)
-        np.save("classes.npy", classes_)
+        np.save(self.dir_+'X_train_mode_' + str(mode) + '.npy', X_train)
+        np.save(self.dir_+'X_test_mode_' + str(mode) + '.npy', X_test)
+        np.save(self.dir_+'y_train_mode_' + str(mode) + '.npy', y_train)
+        np.save(self.dir_+'y_test_mode_' + str(mode) + '.npy', y_test)
+        np.save(self.dir_+"classes.npy", classes_)
         return X_train, X_test, y_train, y_test, classes_
 
     def train_model(self, modelname='trial', mode=0):
         try:
-            X_train = np.load('X_train_mode_' + str(mode) + '.npy')
-            X_test = np.load('X_test_mode_' + str(mode) + '.npy')
-            y_train = np.load('y_train_mode_' + str(mode) + '.npy')
-            y_test = np.load('y_test_mode_' + str(mode) + '.npy')
-            classes_ = np.load("classes.npy")
+            print(self.dir_+'X_train_mode_' + str(mode) + '.npy')
+            X_train = np.load(self.dir_+'X_train_mode_' + str(mode) + '.npy')
+            X_test = np.load(self.dir_+'X_test_mode_' + str(mode) + '.npy')
+            y_train = np.load(self.dir_+'y_train_mode_' + str(mode) + '.npy')
+            y_test = np.load(self.dir_+'y_test_mode_' + str(mode) + '.npy')
+            classes_ = np.load(self.dir_+"classes.npy")
         except:
             X_train, X_test, y_train, y_test, classes_ = self.embedd_dataset(modelname, mode)
-        self.m.train(X_train, y_train, modelname)
+        if self.m.model is None:
+            self.m.train(X_train, y_train, modelname)
+        else:
+            self.m.retrain(X_train, y_train, modelname)
 
     def test_model(self, modelname='trial', mode=0):
         try:
-            X_train = np.load('X_train_mode_' + str(mode) + '.npy')
-            X_test = np.load('X_test_mode_' + str(mode) + '.npy')
-            y_train = np.load('y_train_mode_' + str(mode) + '.npy')
-            y_test = np.load('y_test_mode_' + str(mode) + '.npy')
-            classes_ = np.load("classes.npy")
+            X_test = np.load(self.dir_+'X_test_mode_' + str(mode) + '.npy')
+            y_test = np.load(self.dir_+'y_test_mode_' + str(mode) + '.npy')
+            classes_ = np.load(self.dir_+"classes.npy")
         except:
             X_train, X_test, y_train, y_test, classes_ = self.embedd_dataset(modelname, mode)
         cm, acc, report = self.m.test(X_test, y_test, modelname)
         print("Test Accurcy: " + str(acc))
         print(report)
         plot_confusion_matrix(cm, classes_, True)
+
+s=system()
+s.test_model('weights.17-1.48-0.70.hdf5')
 
