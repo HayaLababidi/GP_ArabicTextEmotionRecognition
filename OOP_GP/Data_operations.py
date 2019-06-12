@@ -3,10 +3,11 @@ import re
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelBinarizer
+from sklearn.preprocessing import LabelBinarizer, OneHotEncoder
 import string
 from nltk.stem.isri import ISRIStemmer
 from googleapiclient.discovery import build
+import pickle
 import csv
 
 
@@ -15,6 +16,7 @@ class Data_operations:
     my_cse_id = "007967891901694126580:i3iq-cjlldq"
 
     def __init__(self):  # , my_api_key, my_cse_id):
+        self._dictionary = None
         self._test_size = 0.1
         self.out_of_vocab = 0
         self.in_vocab = 0
@@ -213,6 +215,67 @@ class Data_operations:
                 row.append(padding)
         return np.array(row)
 
+    def one_hot_encode(dataset):
+        max_length = 0
+        data_Array2d = []
+
+        for i in range(len(dataset)):
+            try:
+                chars = list(dataset[i][0])
+                cur_length = len(dataset[i][0])
+                if cur_length > max_length:
+                    max_length = cur_length
+            except:
+                print("skipped row{}".format(i))
+                continue
+
+            length = len(chars)
+
+            for indexRow in range(length):
+                temp = []
+                temp.append(chars[indexRow])
+                data_Array2d.append(temp)
+        print("max_length of sentences", max_length)
+
+        hot = OneHotEncoder(handle_unknown='ignore')
+        # print("dataset array length",len(data_Array2d))
+        hot.fit(data_Array2d)
+        # print("categorys",hot.categories)
+
+        encoded_dataset = np.zeros(shape=(len(dataset), max_length, 155))  # list of encoded rows
+        encoded_row = np.zeros(shape=(max_length, 155))  # vectors for each char in dataset row
+
+        # for each row get 2darray of char
+        # encode each char ,append encoded_row
+        # append encoded dataset
+
+        for i in range(len(dataset)):
+            row = dataset[i]
+            try:
+                chars = list(row[0])
+            except:
+                print(row[0])
+            length = len(chars)
+            char_2d = []
+            for indexRow in range(max_length):
+                temp = []
+                try:
+                    temp.append(chars[indexRow])
+                except:
+                    temp.append(" ")
+                char_2d.append(temp)
+            encoded_row = hot.transform(char_2d).toarray()
+
+
+            encoded_dataset[i] = encoded_row
+
+        encoded_datasetLength = len(encoded_dataset[0])
+        print("encoded_dataset vector lenght", encoded_datasetLength)
+        # x = np.array(encoded_dataset)
+        print("dataset shape", encoded_dataset.shape)
+        print("\n------------------")
+        return encoded_dataset, max_length, encoded_datasetLength
+
     def convert_to_int_dataset(self, dataset, dictionary):
 
         row_length = 288
@@ -229,28 +292,32 @@ class Data_operations:
 
     def embedd_doc(self, text, mode):
         # mode 0 word embedding , mode 1 one hot , mode 2 integer embedding,3 keras
+        embedded_vector = []
 
-        data_df = pd.read_csv("Emotional-Tone-Dataset.csv", encoding="windows-1256")
-        X = data_df[['tweet']].values
-        Y = data_df[['label']].values
-        # use own labels
-        label_binarizer = LabelBinarizer()
-        label_binarizer.fit(Y)  # need to be global or remembered to use it later
-        one_hot_Y = label_binarizer.transform(Y)
         if mode == 0:
             self._number_of_inputs = 140
             self._vector_size = 300
             embedded_vector, in_vocab, out_vocab = self.embed_doc_word(text)
         elif mode == 1:
+            #  one hot
             pass
         elif mode == 2:
-            _dictionary = self.get_dictonary(X)
+            #  integer representation
+            if self._dictionary is None:
+                # load dictionary if it's not loaded
+                try:
+                    pickle_in = open("dict.pickle", "rb")
+                    self._dictionary = pickle.load(pickle_in)
+                except:
+                    #  indicate some error and quit
+                    return "no dictionary was found "
             # convert each character to integer number
-            int_dataset = self.convert_to_int_doc(X, _dictionary)
-            # print("dataset shape:", np.array(int_dataset).shape)
-        elif mode == 3:
-            pass
-        return embedded_vector, label_binarizer.classes_
+            embedded_vector = self.convert_to_int_doc(text, self._dictionary)
+        '''elif mode == 3:
+        #experemental mode , future work
+            return X, label_binarizer.classes_, one_hot_Y'''
+
+        return embedded_vector
 
     def read_dataset(self, mode):
         # mode 0 word embedding , mode 1 one hot , mode 2 integer embedding,3 keras
@@ -271,11 +338,18 @@ class Data_operations:
         elif mode == 1:
             pass
         elif mode == 2:
-            _dictionary = self.get_dictonary(X)
+            if self._dictionary is None:
+                try:
+                    pickle_in = open("dict.pickle", "rb")
+                    self._dictionary = pickle.load(pickle_in)
+                except:
+                    self._dictionary = self.get_dictonary(X)
+                    pickle_out = open("dict.pickle", "wb")
+                    pickle.dump(self._dictionary, pickle_out)
+                    pickle_out.close()
+
             # convert each character to integer number
-            int_dataset = self.convert_to_int(X, _dictionary)
-            # print("dataset shape:", np.array(int_dataset).shape)
-            # split dataset
+            int_dataset = self.convert_to_int_doc(X, self._dictionary)
             eX_train, eX_test, y_train, y_test = train_test_split(int_dataset, one_hot_Y, test_size=self._test_size,
                                                                   random_state=42)
         elif mode == 3:

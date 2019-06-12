@@ -6,7 +6,6 @@ from matplotlib import pyplot as plt
 import itertools
 
 
-
 def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix', cmap=plt.cm.Blues):
     """
     This function prints and plots the confusion matrix.
@@ -43,12 +42,14 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
 
 class system:
     dir_ = "./models/"
+
     def __init__(self):
         self.m = model()
         self.data = Data_operations()
 
     def predict_doc(self, text, modelname='trial', mode=0):  # add default model name
-        embedded_vector, classes = self.data.embedd_doc(text, mode)
+        embedded_vector = self.data.embedd_doc(text, mode)
+        classes = np.load(self.dir_ + "classes.npy")
         if mode == 0:
             arr = np.zeros(shape=(1, embedded_vector.shape[0], embedded_vector.shape[1]))
             arr[0] = np.array(embedded_vector)
@@ -85,7 +86,7 @@ class system:
         else:
             self.m.retrain(X_train, y_train, modelname)
 
-    def test_model(self, modelname='trial', mode=0):
+    def test_model(self, modelname='trial', mode=2):
         try:
             X_test = np.load(self.dir_+'X_test_mode_' + str(mode) + '.npy')
             y_test = np.load(self.dir_+'y_test_mode_' + str(mode) + '.npy')
@@ -97,6 +98,6 @@ class system:
         print(report)
         plot_confusion_matrix(cm, classes_, True)
 
-s=system()
+s = system()
 s.test_model('weights.17-1.48-0.70.hdf5')
 

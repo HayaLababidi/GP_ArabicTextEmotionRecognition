@@ -1,180 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b630346b-ad29-44a3-b514-9a79302e0fce" name="Default Changelist" comment="little changes" />
+    <list default="true" id="b630346b-ad29-44a3-b514-9a79302e0fce" name="Default Changelist" comment="little changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_GP/Data_operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_GP/Data_operations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_GP/system.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_GP/system.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/read_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/read_data.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1124739245">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.122" value="1" />
-          <entry key="project.open.time.30" value="1" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="py" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Python" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Python Console" value="2" />
-          <entry key="py" value="571" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Python" value="573" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-1106835566">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.47" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Python Console" value="34" />
-          <entry key="csv" value="8" />
-          <entry key="py" value="1494" />
-          <entry key="txt" value="125" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CSV" value="8" />
-          <entry key="PLAIN_TEXT" value="125" />
-          <entry key="Python" value="1528" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="csv" value="3" />
-          <entry key="py" value="18" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CSV" value="3" />
-          <entry key="Python" value="18" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/K_NN.py">
+        <entry file="file://$PROJECT_DIR$/OOP_GP/Data_operations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="75" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/read_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Emotional-Tone-Dataset - Copy.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/embedding.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+            <state relative-caret-position="442">
+              <caret line="26" column="89" lean-forward="true" selection-start-line="26" selection-start-column="89" selection-end-line="26" selection-end-column="89" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#3907#4208#0" />
+                <element signature="e#4254#6433#0" />
+                <element signature="e#6494#7251#0" />
+                <element signature="e#7322#7866#0" />
+                <element signature="e#7929#8392#0" />
+                <element signature="e#8435#10454#0" />
+                <element signature="e#10524#10868#0" />
+                <element signature="e#11777#11897#1" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/normalization.py">
+        <entry file="file://$PROJECT_DIR$/OOP_GP/system.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1734">
-              <caret line="104" column="20" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <marker date="1549141354728" expanded="true" signature="1224:1225" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/Compressed/Ex_Files_Deep_Learning_Image_Recog/Exercise Files/Ch03/08_complete_neural_net final.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/Compressed/Ex_Files_Deep_Learning_Image_Recog/Exercise Files/Ch04/01_neural_network_training complete.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="43" selection-start-line="43" selection-end-line="51" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../Mix/Ex_Files_TensorFlow/Exercise Files/03/load_data final.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" selection-start-line="8" selection-end-line="10" />
+            <state relative-caret-position="352">
+              <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#260#1356#0" />
+                <element signature="e#2067#2205#0" />
+                <element signature="e#2806#3507#0" />
+                <element signature="e#3570#4072#0" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/Compressed/Ex_Files_Deep_Learning_Image_Recog/Exercise Files/Ch04/02_training_and_saving_weights complete.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -190,6 +64,13 @@
     <findStrings>
       <find>{}</find>
       <find>{</find>
+      <find>mode</find>
+      <find>get_dictonary</find>
+      <find>pick</find>
+      <find>if</find>
+      <find>try</find>
+      <find>_di</find>
+      <find>onvert_to_int</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -201,10 +82,12 @@
         <option value="$USER_HOME$/Downloads/Compressed/Ex_Files_Deep_Learning_Image_Recog/Exercise Files/Ch03/08_complete_neural_net final.py" />
         <option value="$PROJECT_DIR$/Emotional-Tone-Dataset.csv" />
         <option value="$PROJECT_DIR$/normalization.py" />
-        <option value="$PROJECT_DIR$/read_data.py" />
         <option value="$PROJECT_DIR$/Emotional-Tone-Dataset - Copy.csv" />
         <option value="$PROJECT_DIR$/embedding.py" />
         <option value="$PROJECT_DIR$/K_NN.py" />
+        <option value="$PROJECT_DIR$/read_data.py" />
+        <option value="$PROJECT_DIR$/OOP_GP/system.py" />
+        <option value="$PROJECT_DIR$/OOP_GP/Data_operations.py" />
       </list>
     </option>
   </component>
@@ -224,8 +107,13 @@
         <subPane>
           <expand>
             <path>
-              <item name="Keras_cnn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Keras_cnn" type="462c0819:PsiDirectoryNode" />
+              <item name="GP_ArabicTextEmotionRecognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GP_ArabicTextEmotionRecognition" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GP_ArabicTextEmotionRecognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GP_ArabicTextEmotionRecognition" type="462c0819:PsiDirectoryNode" />
+              <item name="OOP_GP" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -235,6 +123,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -250,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.K_NN">
+  <component name="RunManager" selected="Python.Data_operations">
     <configuration name="08_complete_neural_net final" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Keras_cnn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -264,6 +153,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/Compressed/Ex_Files_Deep_Learning_Image_Recog/Exercise Files/Ch03/08_complete_neural_net final.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Data_operations" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Keras_cnn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Maioy\Anaconda3\envs\ML\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OOP_GP" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OOP_GP/Data_operations.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -335,14 +245,39 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="system" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Keras_cnn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Maioy\Anaconda3\envs\ML\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OOP_GP" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OOP_GP/system.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.K_NN" />
       <item itemvalue="Python.read_data" />
       <item itemvalue="Python.08_complete_neural_net final" />
       <item itemvalue="Python.embedding" />
+      <item itemvalue="Python.system" />
+      <item itemvalue="Python.Data_operations" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Data_operations" />
+        <item itemvalue="Python.system" />
         <item itemvalue="Python.read_data" />
         <item itemvalue="Python.embedding" />
         <item itemvalue="Python.08_complete_neural_net final" />
@@ -387,14 +322,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20089285" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23895253" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23870967" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5188216" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -402,14 +338,30 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3535188" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.31423897" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.31290323" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20089285" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23870967" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5188216" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3535188" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.31290323" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reading input and embedding with minor chanege to normalization" />
@@ -421,8 +373,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/read_data.py</url>
-          <line>16</line>
+          <line>17</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/OOP_GP/system.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -436,30 +393,14 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../../../Mix/Ex_Files_TensorFlow/Exercise Files/03/training_loop final.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/envs/vision/Lib/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Emotional-Tone-Dataset.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/envs/vision/Lib/re.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="185" column="14" selection-start-line="185" selection-start-column="14" selection-end-line="185" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/vision/Lib/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py" />
+    <entry file="file://$PROJECT_DIR$/Emotional-Tone-Dataset.csv" />
+    <entry file="file://$USER_HOME$/Anaconda3/envs/vision/Lib/re.py" />
+    <entry file="file://$PROJECT_DIR$/Emotional-Tone-Dataset - Copy.csv" />
+    <entry file="file://$USER_HOME$/Downloads/Compressed/Ex_Files_Deep_Learning_Image_Recog/Exercise Files/Ch03/08_complete_neural_net final.py" />
+    <entry file="file://$USER_HOME$/Downloads/Compressed/Ex_Files_Deep_Learning_Image_Recog/Exercise Files/Ch04/01_neural_network_training complete.py" />
+    <entry file="file://$PROJECT_DIR$/../../../../Mix/Ex_Files_TensorFlow/Exercise Files/03/load_data final.py" />
+    <entry file="file://$USER_HOME$/Downloads/Compressed/Ex_Files_Deep_Learning_Image_Recog/Exercise Files/Ch04/02_training_and_saving_weights complete.py" />
     <entry file="file://$PROJECT_DIR$/K_NN.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -467,26 +408,6 @@
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/read_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Emotional-Tone-Dataset - Copy.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -506,37 +427,51 @@
           <caret line="104" column="20" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <marker date="1549141354728" expanded="true" signature="1224:1225" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Compressed/Ex_Files_Deep_Learning_Image_Recog/Exercise Files/Ch03/08_complete_neural_net final.py">
+    <entry file="file://$PROJECT_DIR$/read_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        <state relative-caret-position="187">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Compressed/Ex_Files_Deep_Learning_Image_Recog/Exercise Files/Ch04/01_neural_network_training complete.py">
+    <entry file="file://$PROJECT_DIR$/OOP_GP/system.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="43" selection-start-line="43" selection-end-line="51" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Mix/Ex_Files_TensorFlow/Exercise Files/03/load_data final.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" selection-start-line="8" selection-end-line="10" />
+        <state relative-caret-position="352">
+          <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#260#1356#0" />
+            <element signature="e#2067#2205#0" />
+            <element signature="e#2806#3507#0" />
+            <element signature="e#3570#4072#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/Compressed/Ex_Files_Deep_Learning_Image_Recog/Exercise Files/Ch04/02_training_and_saving_weights complete.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/OOP_GP/Data_operations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="89" lean-forward="true" selection-start-line="26" selection-start-column="89" selection-end-line="26" selection-end-column="89" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#3907#4208#0" />
+            <element signature="e#4254#6433#0" />
+            <element signature="e#6494#7251#0" />
+            <element signature="e#7322#7866#0" />
+            <element signature="e#7929#8392#0" />
+            <element signature="e#8435#10454#0" />
+            <element signature="e#10524#10868#0" />
+            <element signature="e#11777#11897#1" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

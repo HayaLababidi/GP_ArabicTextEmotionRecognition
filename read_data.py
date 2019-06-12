@@ -1,6 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 import embedding
+
 def read_dataset():
     data_df = pd.read_csv("Emotional-Tone-Dataset - Copy.csv", encoding="windows-1256")
     X = data_df[['tweet']].values
