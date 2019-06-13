@@ -20,7 +20,7 @@ class Data_operations:
         self._test_size = 0.1
         self.out_of_vocab = 0
         self.in_vocab = 0
-        self._aravec_model_name = "full_grams_sg_300_twitter"
+        self._aravec_model_name = "models/full_grams_sg_100_twitter"
         self.arabic_punctuations = '''`÷×؛<>_()*&^%][،/:"؟.,'{}~¦+|!”…“–»«•'''
         self.english_punctuations = string.punctuation
         self.english_numbers = "0123456789"
@@ -326,7 +326,7 @@ class Data_operations:
         embedded_vector = []
         if mode == 0:
             self._number_of_inputs = 140
-            self._vector_size = 300
+            self._vector_size = 100
             embedded_vector, in_vocab, out_vocab = self.embed_doc_word(text)
         elif mode == 1:
             if self._dictionary is None:
@@ -368,7 +368,7 @@ class Data_operations:
         one_hot_Y = label_binarizer.transform(Y)
         if mode == 0:
             self._number_of_inputs = 140
-            self._vector_size = 300
+            self._vector_size = 100
             X_train, X_test, y_train, y_test = train_test_split(X, one_hot_Y, test_size=self._test_size,
                                                                 random_state=42)
             eX_train, eX_test = self.embed_dataset_word(X_train, X_test)

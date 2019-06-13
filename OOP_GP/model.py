@@ -17,17 +17,17 @@ class model:
         self._dropout_rate = 0.2
         self._dropout_rate_softmax = 0.5
         self._number_of_inputs = 140  # max number of words /characters per doc(tweet)
-        self._vector_size = 300  # vector for each word
+        self._vector_size = 100  # vector for each word
         self._batch_size = 10
         self._kernal_size = 3  # An integer or tuple/list of a single integer
         self._pool_size = 2
         self._epochs = 50
         self._test_size = 0.1  # percentage of test from the dataset
         self._Learning_rate = 0.0001
-        # _feature_maps = [300,400,500,600,700,800,900,1000,1100,1200]
-        self._feature_maps = 300
-        self._num_conv = 3
-        self.filename = "models\weights.{epoch:02d}-{val_loss:.2f}-{val_acc:.2f}.hdf5"
+        # _feature_maps = [100,400,500,600,700,800,900,1000,1100,1200]
+        self._feature_maps = 100
+        self._num_conv = 2
+        self.filename = "models/weights.{epoch:02d}-{val_loss:.2f}-{val_acc:.2f}.hdf5"
         self.model = None
 
     def train(self, train_x, train_y, modelname="trial"):
@@ -52,8 +52,8 @@ class model:
                                     activation="relu"))
             if i % 2 == 0:
                 # print("pool", i)
-                if i % 4 == 0:
-                    self.model.add(keras.layers.BatchNormalization())
+                #if i % 4 == 0:
+                    #self.model.add(keras.layers.BatchNormalization())
                 self.model.add(keras.layers.MaxPooling1D(pool_size=self._pool_size, padding='same'))
 
         # Dropout

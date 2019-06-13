@@ -86,7 +86,7 @@ class system:
         else:
             self.m.retrain(X_train, y_train, modelname)
 
-    def test_model(self, modelname='trial', mode=2):
+    def test_model(self, modelname='trial', mode=0):
         try:
             X_test = np.load(self.dir_+'X_test_mode_' + str(mode) + '.npy')
             y_test = np.load(self.dir_+'y_test_mode_' + str(mode) + '.npy')
@@ -98,6 +98,17 @@ class system:
         print(report)
         plot_confusion_matrix(cm, classes_, True)
 
-s = system()
-s.test_model('weights.17-1.48-0.70.hdf5')
+#s = system()
 
+def console_Demo():
+    s = system()
+    s.predict_doc('', modelname='3_100')
+    doc = input("اكتب جملة: لمعرفة حالتها\n")
+    while True:
+        if doc == 'break':
+            print("الى اللقاء")
+            break
+        else:
+            softmax_prediction, classes, textlabel =s.predict_doc(doc, modelname='3_100')
+            print ("الحالة:", textlabel)
+            doc = input("")
