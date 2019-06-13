@@ -219,17 +219,20 @@ class Data_operations:
         onehot_text = []
         row_length = 288
         padding = np.zeros(len(dictionary))
-        if text is not None:
-            for character in text[0]:
-                vector = np.zeros(len(dictionary))
-                index = dictionary[character]
-                vector[index] = 1
-                onehot_text.append(vector)
+        if text[0] is not None:
+            try:
+                for character in text[0]:
+                    vector = np.zeros(len(dictionary))
+                    index = dictionary[character]
+                    vector[index] = 1
+                    onehot_text.append(vector)
+            except :
+                pass 
         length = len(onehot_text)
         for i in range(length, row_length):
             onehot_text.append(padding)
         return onehot_text
-    
+
     def one_hot_encode_dataset(self, dictionary,dataset):
         data_array2d = []
         for row in dataset:
