@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b630346b-ad29-44a3-b514-9a79302e0fce" name="Default Changelist" comment="little changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_GP/Data_operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_GP/Data_operations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_GP/system.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_GP/system.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/read_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/read_data.py" afterDir="false" />
-    </list>
+    <list default="true" id="b630346b-ad29-44a3-b514-9a79302e0fce" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,18 +13,46 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OOP_GP/Data_operations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="89" lean-forward="true" selection-start-line="26" selection-start-column="89" selection-end-line="26" selection-end-column="89" />
+            <state relative-caret-position="423">
+              <caret line="231" column="4" selection-start-line="231" selection-start-column="4" selection-end-line="231" selection-end-column="4" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <element signature="e#3907#4208#0" />
-                <element signature="e#4254#6433#0" />
-                <element signature="e#6494#7251#0" />
-                <element signature="e#7322#7866#0" />
-                <element signature="e#7929#8392#0" />
-                <element signature="e#8435#10454#0" />
-                <element signature="e#10524#10868#0" />
-                <element signature="e#11777#11897#1" />
+                <element signature="e#1100#1704#0" />
+                <element signature="e#3938#4239#0" />
+                <element signature="e#4285#6464#0" />
+                <element signature="e#6525#7282#0" />
+                <element signature="e#7353#7897#0" />
+                <element signature="e#7960#8423#0" />
+                <element signature="e#8466#10485#0" />
+                <element signature="e#10555#10899#0" />
+                <element signature="e#11087#11228#0" />
+                <element signature="e#11820#12228#0" />
+                <element signature="e#11329#11852#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/embedding.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chardictionary.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
+              <folding>
+                <element signature="e#32#501#0" />
+                <element signature="e#548#870#0" />
               </folding>
             </state>
           </provider>
@@ -38,14 +61,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OOP_GP/system.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
+            <state relative-caret-position="714">
               <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#260#1356#0" />
-                <element signature="e#2067#2205#0" />
-                <element signature="e#2806#3507#0" />
-                <element signature="e#3570#4072#0" />
               </folding>
             </state>
           </provider>
@@ -71,6 +91,7 @@
       <find>try</find>
       <find>_di</find>
       <find>onvert_to_int</find>
+      <find>one_hot_encode(</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -87,6 +108,7 @@
         <option value="$PROJECT_DIR$/K_NN.py" />
         <option value="$PROJECT_DIR$/read_data.py" />
         <option value="$PROJECT_DIR$/OOP_GP/system.py" />
+        <option value="$PROJECT_DIR$/chardictionary.py" />
         <option value="$PROJECT_DIR$/OOP_GP/Data_operations.py" />
       </list>
     </option>
@@ -309,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1549149107979</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mode 2 : integer representation">
+      <created>1560354655067</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560354655067</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -366,7 +395,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reading input and embedding with minor chanege to normalization" />
     <MESSAGE value="little changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="little changes" />
+    <MESSAGE value="mode 2 : integer representation" />
+    <option name="LAST_COMMIT_MESSAGE" value="mode 2 : integer representation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -411,16 +441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/embedding.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/normalization.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
@@ -443,32 +463,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OOP_GP/system.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="714">
           <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#260#1356#0" />
-            <element signature="e#2067#2205#0" />
-            <element signature="e#2806#3507#0" />
-            <element signature="e#3570#4072#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/embedding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chardictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#32#501#0" />
+            <element signature="e#548#870#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OOP_GP/Data_operations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="89" lean-forward="true" selection-start-line="26" selection-start-column="89" selection-end-line="26" selection-end-column="89" />
+        <state relative-caret-position="423">
+          <caret line="231" column="4" selection-start-line="231" selection-start-column="4" selection-end-line="231" selection-end-column="4" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#3907#4208#0" />
-            <element signature="e#4254#6433#0" />
-            <element signature="e#6494#7251#0" />
-            <element signature="e#7322#7866#0" />
-            <element signature="e#7929#8392#0" />
-            <element signature="e#8435#10454#0" />
-            <element signature="e#10524#10868#0" />
-            <element signature="e#11777#11897#1" />
+            <element signature="e#1100#1704#0" />
+            <element signature="e#3938#4239#0" />
+            <element signature="e#4285#6464#0" />
+            <element signature="e#6525#7282#0" />
+            <element signature="e#7353#7897#0" />
+            <element signature="e#7960#8423#0" />
+            <element signature="e#8466#10485#0" />
+            <element signature="e#10555#10899#0" />
+            <element signature="e#11087#11228#0" />
+            <element signature="e#11820#12228#0" />
+            <element signature="e#11329#11852#0" />
           </folding>
         </state>
       </provider>

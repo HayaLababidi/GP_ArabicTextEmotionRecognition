@@ -215,6 +215,33 @@ class Data_operations:
                 row.append(padding)
         return np.array(row)
 
+    def one_hot_encode_doc(self, dictionary, text):
+        onehot_text = []
+        row_length = 288
+        padding = np.zeros(len(dictionary))
+        if text is not None:
+            for character in text[0]:
+                vector = np.zeros(len(dictionary))
+                index = dictionary[character]
+                vector[index] = 1
+                onehot_text.append(vector)
+        length = len(onehot_text)
+        for i in range(length, row_length):
+            onehot_text.append(padding)
+        return onehot_text
+    
+    def one_hot_encode_dataset(self, dictionary,dataset):
+        data_array2d = []
+        for row in dataset:
+            temp = []
+            temp = self.one_hot_encode_doc(dictionary, row)
+            data_array2d.append(temp)
+
+        return data_array2d
+
+
+
+
     def one_hot_encode(dataset):
         max_length = 0
         data_Array2d = []
@@ -291,16 +318,23 @@ class Data_operations:
         return int_dataset
 
     def embedd_doc(self, text, mode):
+
         # mode 0 word embedding , mode 1 one hot , mode 2 integer embedding,3 keras
         embedded_vector = []
-
         if mode == 0:
             self._number_of_inputs = 140
             self._vector_size = 300
             embedded_vector, in_vocab, out_vocab = self.embed_doc_word(text)
         elif mode == 1:
-            #  one hot
-            pass
+            if self._dictionary is None:
+                # load dictionary if it's not loaded
+                try:
+                    pickle_in = open("dict.pickle", "rb")
+                    self._dictionary = pickle.load(pickle_in)
+                except:
+                    #  indicate some error and quit
+                    return "no dictionary was found "
+            embedded_vector = self.one_hot_encode_doc(self._dictionary,text)
         elif mode == 2:
             #  integer representation
             if self._dictionary is None:
@@ -336,7 +370,18 @@ class Data_operations:
                                                                 random_state=42)
             eX_train, eX_test = self.embed_dataset_word(X_train, X_test)
         elif mode == 1:
-            pass
+            if self._dictionary is None:
+                try:
+                    pickle_in = open("dict.pickle", "rb")
+                    self._dictionary = pickle.load(pickle_in)
+                except:
+                    self._dictionary = self.get_dictonary(X)
+                    pickle_out = open("dict.pickle", "wb")
+                    pickle.dump(self._dictionary, pickle_out)
+                    pickle_out.close()
+            X = self.one_hot_encode_dataset(self._dictionary, X)
+            eX_train, eX_test, y_train, y_test = train_test_split(X, one_hot_Y, test_size=self._test_size,
+                                                                random_state=42)
         elif mode == 2:
             if self._dictionary is None:
                 try:
@@ -353,6 +398,7 @@ class Data_operations:
             eX_train, eX_test, y_train, y_test = train_test_split(int_dataset, one_hot_Y, test_size=self._test_size,
                                                                   random_state=42)
         elif mode == 3:
+            # experimental
             pass
         return eX_train, eX_test, y_train, y_test, label_binarizer.classes_
 
