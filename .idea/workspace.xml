@@ -1,74 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b630346b-ad29-44a3-b514-9a79302e0fce" name="Default Changelist" comment="" />
+    <list default="true" id="b630346b-ad29-44a3-b514-9a79302e0fce" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Keras_cnn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Keras_cnn.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.net_Project/GP1/GP1/bin/GP1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.net_Project/GP1/GP1/bin/GP1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.net_Project/GP1/GP1/bin/GP1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.net_Project/GP1/GP1/bin/GP1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.net_Project/GP1/GP1/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.net_Project/GP1/GP1/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.net_Project/GP1/GP1/obj/Debug/GP1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.net_Project/GP1/GP1/obj/Debug/GP1.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.net_Project/GP1/GP1/obj/Debug/GP1.csprojResolveAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.net_Project/GP1/GP1/obj/Debug/GP1.csprojResolveAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.net_Project/GP1/GP1/obj/Debug/GP1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.net_Project/GP1/GP1/obj/Debug/GP1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.net_Project/GP1/GP1/obj/Debug/GP1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.net_Project/GP1/GP1/obj/Debug/GP1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASP.net_Project/GP1/GP1/secondPage.aspx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ASP.net_Project/GP1/GP1/secondPage.aspx.cs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1087791748">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.113" value="1" />
+          <entry key="project.open.time.59" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/OOP_GP/Data_operations.py">
+        <entry file="file://$PROJECT_DIR$/ASP.net_Project/runPredict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="229" column="21" selection-start-line="229" selection-start-column="21" selection-end-line="229" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <element signature="e#1100#1704#0" />
-                <element signature="e#3938#4239#0" />
-                <element signature="e#4285#6464#0" />
-                <element signature="e#6525#7282#0" />
-                <element signature="e#7353#7897#0" />
-                <element signature="e#7960#8423#0" />
-                <element signature="e#8466#10485#0" />
-                <element signature="e#10555#10899#0" />
-                <element signature="e#11087#11228#0" />
-                <element signature="e#11820#12228#0" />
-                <element signature="e#11329#11852#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/embedding.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chardictionary.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
-              <folding>
-                <element signature="e#32#501#0" />
-                <element signature="e#548#870#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OOP_GP/system.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="94" column="86" selection-start-line="94" selection-start-column="77" selection-end-line="94" selection-end-column="86" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-                <element signature="e#260#1356#0" />
-                <element signature="e#2317#2787#0" />
-                <element signature="e#2851#3552#0" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -115,7 +85,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="236" />
     <option name="y" value="-8" />
     <option name="width" value="1380" />
@@ -127,6 +97,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,19 +108,19 @@
             <path>
               <item name="GP_ArabicTextEmotionRecognition" type="b2602c69:ProjectViewProjectNode" />
               <item name="GP_ArabicTextEmotionRecognition" type="462c0819:PsiDirectoryNode" />
-              <item name="OOP_GP" type="462c0819:PsiDirectoryNode" />
+              <item name="ASP.net_Project" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -353,7 +324,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20089285" />
@@ -394,6 +365,9 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reading input and embedding with minor chanege to normalization" />
     <MESSAGE value="little changes" />
@@ -424,22 +398,19 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../../Mix/Ex_Files_TensorFlow/Exercise Files/03/training_loop final.py" />
+    <entry file="file://E:/../Mix/Ex_Files_TensorFlow/Exercise Files/03/training_loop final.py" />
     <entry file="file://$USER_HOME$/Anaconda3/envs/vision/Lib/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py" />
     <entry file="file://$PROJECT_DIR$/Emotional-Tone-Dataset.csv" />
     <entry file="file://$USER_HOME$/Anaconda3/envs/vision/Lib/re.py" />
     <entry file="file://$PROJECT_DIR$/Emotional-Tone-Dataset - Copy.csv" />
     <entry file="file://$USER_HOME$/Downloads/Compressed/Ex_Files_Deep_Learning_Image_Recog/Exercise Files/Ch03/08_complete_neural_net final.py" />
     <entry file="file://$USER_HOME$/Downloads/Compressed/Ex_Files_Deep_Learning_Image_Recog/Exercise Files/Ch04/01_neural_network_training complete.py" />
-    <entry file="file://$PROJECT_DIR$/../../../../Mix/Ex_Files_TensorFlow/Exercise Files/03/load_data final.py" />
+    <entry file="file://E:/../../Mix/Ex_Files_TensorFlow/Exercise Files/03/load_data final.py" />
     <entry file="file://$USER_HOME$/Downloads/Compressed/Ex_Files_Deep_Learning_Image_Recog/Exercise Files/Ch04/02_training_and_saving_weights complete.py" />
     <entry file="file://$PROJECT_DIR$/K_NN.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="75" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -447,9 +418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
           <caret line="104" column="20" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -463,13 +431,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/OOP_GP/Data_operations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3723">
+          <caret line="229" column="21" selection-start-line="229" selection-start-column="21" selection-end-line="229" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/embedding.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="255">
           <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -477,44 +449,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#32#501#0" />
-            <element signature="e#548#870#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OOP_GP/system.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
+        <state relative-caret-position="1071">
           <caret line="94" column="86" selection-start-line="94" selection-start-column="77" selection-end-line="94" selection-end-column="86" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#260#1356#0" />
-            <element signature="e#2317#2787#0" />
-            <element signature="e#2851#3552#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OOP_GP/Data_operations.py">
+    <entry file="file://$PROJECT_DIR$/ASP.net_Project/runPredict.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="229" column="21" selection-start-line="229" selection-start-column="21" selection-end-line="229" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#1100#1704#0" />
-            <element signature="e#3938#4239#0" />
-            <element signature="e#4285#6464#0" />
-            <element signature="e#6525#7282#0" />
-            <element signature="e#7353#7897#0" />
-            <element signature="e#7960#8423#0" />
-            <element signature="e#8466#10485#0" />
-            <element signature="e#10555#10899#0" />
-            <element signature="e#11087#11228#0" />
-            <element signature="e#11820#12228#0" />
-            <element signature="e#11329#11852#0" />
-          </folding>
+        <state relative-caret-position="323">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
         </state>
       </provider>
     </entry>
