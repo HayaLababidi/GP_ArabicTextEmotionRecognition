@@ -54,7 +54,7 @@ class system:
             arr = np.zeros(shape=(1, embedded_vector.shape[0], embedded_vector.shape[1]))
             arr[0] = np.array(embedded_vector)
             softmax_prediction = self.m.predict(arr, modelname)
-        return softmax_prediction, classes, classes[np.argmax(softmax_prediction)]
+        return np.argmax(softmax_prediction)
 
     def add_sample(self, text, lable, filename="new_EmotionalTone_dataset.csv"):  # make sure to add an empty one
         row = [text, lable]
@@ -109,6 +109,7 @@ def console_Demo():
             print("الى اللقاء")
             break
         else:
-            softmax_prediction, classes, textlabel =s.predict_doc(doc, modelname='3_100')
-            print ("الحالة:", textlabel)
+            textlabel =s.predict_doc(doc, modelname='3_100')
+            print ("الحالة:", str(textlabel))
             doc = input("")
+#console_Demo()
