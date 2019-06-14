@@ -54,7 +54,7 @@ namespace GP1
             if (text != "")
             {  
                 //outputString = integration_between_ASPPython(text);
-                string python = @"C:\Users\Yasmen\Anaconda3\envs\vision\python.exe";
+                string python = @"C:\Users\Haya\Anaconda3\envs\vision\python.exe";
                 string myPythonApp = @"C:\GP_PythonFiles\runPredict.py";
 
                 ProcessStartInfo myProcessStartInfo = new ProcessStartInfo(python);
@@ -125,7 +125,7 @@ namespace GP1
         {
             btn_predictWrong.Enabled = false;
 
-            string newFileName = @"E:\university\Fourth Year\GP\The Project\GP1\new_EmotionalTone_dataset.csv";
+            string newFileName = @"C:\GP_PythonFiles\new_EmotionalTone_dataset.csv";
 
             if (!File.Exists(newFileName))
             {
@@ -146,7 +146,7 @@ namespace GP1
         {
            lable= list_emo.SelectedItem.Text;
 
-           string newFileName = @"E:\university\Fourth Year\GP\The Project\GP1\new_EmotionalTone_dataset.csv";
+           string newFileName = @"C:\GP_PythonFiles\new_EmotionalTone_dataset.csv";
 
            if (!File.Exists(newFileName))
            {

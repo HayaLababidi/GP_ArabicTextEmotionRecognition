@@ -57,19 +57,19 @@
         <div class="row">
           <div class="text-center col-sm-8 col-sm-offset-2">
             <h2>Our Service</h2>
-            <p>Detect The Emotion From The Text</p>
+            <p>تنبؤ المشاعر من نص عربي</p>
           </div> 
                     <div class="row">
 							<div class="col-sm-9">
                                 <!-- the input -->
-                                <label for="inputText">Please Enter the Sentence</label>                           
+                                <label for="inputText">ادخل جملة لمعرفة حالتها</label>                           
                                 <asp:TextBox ID="txt_input" runat="server" class="form-control"></asp:TextBox>     
 							</div>
 						</div><br>
               
                     <div class="row">
 							<div class="col-sm-9">
-                                <asp:Button ID="btn_input" runat="server" Text="Asalysis" OnClick="btn_input_Click" class="btn btn-primary"/>
+                                <asp:Button ID="btn_input" runat="server" Text="تحليل" OnClick="btn_input_Click" class="btn btn-primary"/>
 							</div>
 						</div><br>
                   	                 
@@ -79,35 +79,35 @@
 
                                 <div class="col-sm-2" data-emotion="angry">
 									<img runat="server" id="img0" src="images/emoji/angry.png">
-									<p>Angry</p>
+									<p>غضب</p>
 								</div>
                                 <div class="col-sm-2" data-emotion="fear">
 									<img runat="server" id="img1" src="images/emoji/fear.png">
-									<p>Fear</p>
+									<p>خوف</p>
 								</div>
 								<div class="col-sm-2" data-emotion="happy">
 									<img runat="server" id="img2" src="images/emoji/happy.png" class="img-fluid">
-									<p>Happy</p>
+									<p>فرح</p>
 								</div>
                                 <div class="col-sm-2" data-emotion="love">
 									<img runat="server" id="img3" src="images/emoji/love.png">
-									<p>love</p>
+									<p>حب</p>
 								</div>
 								<div class="col-sm-2" data-emotion="Neutral">
 									<img runat="server" id="img4" src="images/emoji/Neutral.png">
-									<p>Neutral</p>
+									<p>طبيعي</p>
 								</div>
                    				<div class="col-sm-2" data-emotion="sad">
 									<img runat="server" id="img5" src="images/emoji/sad.png">
-									<p>Sad</p>
+									<p>حزن</p>
 								</div>
 								<div class="col-sm-2" data-emotion="Surprised">
 									<img runat="server" id="img6" src="images/emoji/Surprised.png">
-									<p>Surprised</p>
+									<p>مفاجئة</p>
 								</div>
                                 <div class="col-sm-2" data-emotion="Sympathy">
 									<img runat="server" id="img7" src="images/emoji/Sympathy.png">
-									<p>Sympathy</p>
+									<p>تعاطف</p>
 								</div>
 							</div>
 						</div>
@@ -116,18 +116,18 @@
            <!-- the check -->
             <div class="row">
 		    <div class="col-sm-9">   
-                <asp:Button ID="btn_predictRight" runat="server" Text="Right Prediction" OnClick="btn_predictRight_Click" class="btn btn-success"/>
-                <asp:Button ID="btn_predictWrong" runat="server" Text="Wrong prediction" OnClick="btn_predictWrong_Click" class="btn btn-danger"/>
+                <asp:Button ID="btn_predictRight" runat="server" Text="تنبؤ صحيح" OnClick="btn_predictRight_Click" class="btn btn-success"/>
+                <asp:Button ID="btn_predictWrong" runat="server" Text="تنبؤ خاطئ" OnClick="btn_predictWrong_Click" class="btn btn-danger"/>
             
                  <asp:DropDownList ID="list_emo" runat="server" Width="200px" AutoPostBack = "true" OnSelectedIndexChanged ="list_emo_SelectedIndexChanged">
-                    <asp:ListItem Text="Happy" Value="1" />
-                    <asp:ListItem Text="Angry" Value="2" />
-                    <asp:ListItem Text="Surprised" Value="3" />
-                    <asp:ListItem Text="Sad" Value="4" />
-                    <asp:ListItem Text="Fear" Value="5" />
-                    <asp:ListItem Text="Neutral" Value="6" />
-                    <asp:ListItem Text="Love" Value="7" />
-                    <asp:ListItem Text="Sympathy" Value="8" />
+                    <asp:ListItem Text="فرح" Value="1" />
+                    <asp:ListItem Text="غضب" Value="2" />
+                    <asp:ListItem Text="مفاجئة" Value="3" />
+                    <asp:ListItem Text="حزن" Value="4" />
+                    <asp:ListItem Text="خوف" Value="5" />
+                    <asp:ListItem Text="طبيعي" Value="6" />
+                    <asp:ListItem Text="حب" Value="7" />
+                    <asp:ListItem Text="نعاطف" Value="8" />
                 </asp:DropDownList> 
 		    </div>
 	</div>
