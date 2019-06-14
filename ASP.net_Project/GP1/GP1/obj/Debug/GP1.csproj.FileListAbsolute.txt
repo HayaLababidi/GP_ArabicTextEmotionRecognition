@@ -16,3 +16,10 @@ D:\CS\FCIS\GP\code\Final with demo\ASP.net_Project\GP1\GP1\obj\Debug\GP1.Propert
 D:\CS\FCIS\GP\code\Final with demo\ASP.net_Project\GP1\GP1\obj\Debug\GP1.csproj.GenerateResource.Cache
 D:\CS\FCIS\GP\code\Final with demo\ASP.net_Project\GP1\GP1\obj\Debug\GP1.dll
 D:\CS\FCIS\GP\code\Final with demo\ASP.net_Project\GP1\GP1\obj\Debug\GP1.pdb
+E:\university\Fourth Year\GP\GP_ArabicTextEmotionRecognition\ASP.net_Project\GP1\GP1\bin\GP1.dll
+E:\university\Fourth Year\GP\GP_ArabicTextEmotionRecognition\ASP.net_Project\GP1\GP1\bin\GP1.pdb
+E:\university\Fourth Year\GP\GP_ArabicTextEmotionRecognition\ASP.net_Project\GP1\GP1\obj\Debug\GP1.csprojResolveAssemblyReference.cache
+E:\university\Fourth Year\GP\GP_ArabicTextEmotionRecognition\ASP.net_Project\GP1\GP1\obj\Debug\GP1.Properties.Resources.resources
+E:\university\Fourth Year\GP\GP_ArabicTextEmotionRecognition\ASP.net_Project\GP1\GP1\obj\Debug\GP1.csproj.GenerateResource.Cache
+E:\university\Fourth Year\GP\GP_ArabicTextEmotionRecognition\ASP.net_Project\GP1\GP1\obj\Debug\GP1.dll
+E:\university\Fourth Year\GP\GP_ArabicTextEmotionRecognition\ASP.net_Project\GP1\GP1\obj\Debug\GP1.pdb

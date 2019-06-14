@@ -12,8 +12,8 @@ namespace GP1
 {
     public partial class secondPage : System.Web.UI.Page
     {
-        public string text  = "فرح";
-        public string lable = "joy";
+        public string text  = " ";
+        public string lable = " ";
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -54,7 +54,7 @@ namespace GP1
             if (text != "")
             {  
                 //outputString = integration_between_ASPPython(text);
-                string python = @"C:\Users\Haya\Anaconda3\envs\vision\python.exe";
+                string python = @"C:\Users\yasmen\Anaconda3\envs\vision\python.exe";
                 string myPythonApp = @"C:\GP_PythonFiles\runPredict.py";
 
                 ProcessStartInfo myProcessStartInfo = new ProcessStartInfo(python);
@@ -144,18 +144,19 @@ namespace GP1
 
         protected void list_emo_SelectedIndexChanged(object sender, EventArgs e)
         {
-           lable= list_emo.SelectedItem.Text;
+            lable = list_emo.SelectedItem.Text;
+            if (lable != "")
+            {
+                string newFileName = @"C:\GP_PythonFiles\new_EmotionalTone_dataset.csv";
 
-           string newFileName = @"C:\GP_PythonFiles\new_EmotionalTone_dataset.csv";
-
-           if (!File.Exists(newFileName))
-           {
-               string Header = "Text" + "," + "Lable" + Environment.NewLine;
-               File.WriteAllText(newFileName, Header);
-           }
-           string content = txt_input.Text + "," + lable + Environment.NewLine;
-           File.AppendAllText(newFileName, content);
-        
+                if (!File.Exists(newFileName))
+                {
+                    string Header = "Text" + "," + "Lable" + Environment.NewLine;
+                    File.WriteAllText(newFileName, Header);
+                }
+                string content = txt_input.Text + "," + lable + Environment.NewLine;
+                File.AppendAllText(newFileName, content);
+            }
         }
 
         protected void btn_exit_Click(object sender, EventArgs e)
@@ -170,6 +171,11 @@ namespace GP1
             img6.Attributes.CssStyle.Add("opacity", "0.3");
             img7.Attributes.CssStyle.Add("opacity", "0.3");
             txt_input.Text = "";
+        }
+
+        protected void list_emo_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

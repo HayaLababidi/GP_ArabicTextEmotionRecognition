@@ -120,6 +120,7 @@
                 <asp:Button ID="btn_predictWrong" runat="server" Text="تنبؤ خاطئ" OnClick="btn_predictWrong_Click" class="btn btn-danger"/>
             
                  <asp:DropDownList ID="list_emo" runat="server" Width="200px" AutoPostBack = "true" OnSelectedIndexChanged ="list_emo_SelectedIndexChanged">
+                     <asp:ListItem Text="" Value="0" Selected="false"/>
                     <asp:ListItem Text="فرح" Value="1" />
                     <asp:ListItem Text="غضب" Value="2" />
                     <asp:ListItem Text="مفاجئة" Value="3" />
