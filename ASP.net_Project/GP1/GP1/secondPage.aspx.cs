@@ -61,7 +61,7 @@ namespace GP1
                 myProcessStartInfo.UseShellExecute = false;
                 myProcessStartInfo.RedirectStandardOutput = true;
 
-                myProcessStartInfo.Arguments = myPythonApp + " " + text;
+                myProcessStartInfo.Arguments = myPythonApp + " " + '"' + text + '"';
 
                 Process myProcess = new Process();
                 myProcess.StartInfo = myProcessStartInfo;
@@ -69,9 +69,10 @@ namespace GP1
 
                 StreamReader myStreamReader = myProcess.StandardOutput;
                 string myString = myStreamReader.ReadLine();
-                outputString = myString;
+                outputString =  myString;
                 myProcess.WaitForExit();
                 myProcess.Close();
+                myStreamReader.Close();
 
                 //anger=0 fear=1 joy=2 love=3 natural=4 sad=5 surprised=6 sympathy=7
                 if (Convert.ToInt16(outputString) == 0)
