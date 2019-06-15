@@ -30,7 +30,7 @@ class Data_operations:
         self._test_size = 0.1
         self.out_of_vocab = 0
         self.in_vocab = 0
-        self._aravec_model_name = "C:\GP_PythonFiles\models\cfull_grams_sg_100_twitter"
+        self._aravec_model_name = r"C:\GP_PythonFiles\models\full_grams_sg_100_twitter"
         self.arabic_punctuations = '''`÷×؛<>_()*&^%][،/:"؟.,'{}~¦+|!”…“–»«•'''
         self.english_punctuations = string.punctuation
         self.english_numbers = "0123456789"
