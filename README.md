@@ -1,12 +1,7 @@
 # GP_EmotionRecognition_ArabicText
 this is a graduation project of a team of computer science students 
-the project's goal is to classifies emotion in arabic text into one of 8 categories
-using a CNN and charecter/word embedding 
-charecter embedding is a work in progress while word embedding was done uising aravec , a pretrained arabic word embedding model 
-project link : https://github.com/bakrianoo/aravec
+the project's goal is to classifies emotion in arabic text into one of 8 categories  
+using CNN and charecter/word embedding  
+charecter embedding is a work in progress while word embedding was done using [aravec](https://github.com/bakrianoo/aravec) , a pretrained arabic word embedding model 
 
-- [x]charecter embedding 
-- [x]preproceing (word embedding only)
-- [x]using aravec
-- [x]CNN 
-- [ ]modify CNN for charecter embedding  
+Project Documentation: [Emotion Recognition Documentation](https://drive.google.com/file/d/10AHMw46tsZAaA2rtrjZPk-NuP00QCFWY/view?usp=sharing)
